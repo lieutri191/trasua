@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Giỏ Hàng - Trà Sữa Cat-Tea</title>
+    <link rel="stylesheet" href="css/cart.css">
+</head>
+<body>
+    <header>
+        <h1>Giỏ Hàng</h1>
+        <nav>
+            <a href="index.html">Trang chủ  ||  </a>
+            <a href="checkout.html">Thanh toán</a>
+        </nav>
+    </header>
+    <main>
+        <div id="cart-items">
+            <!-- Các sản phẩm trong giỏ hàng sẽ được hiển thị tại đây -->
+        </div>
+        <div id="cart-total">
+            <p><strong>Tổng tiền: <span id="total-price">0 VND</span></strong></p>
+        </div>
+        <button id="checkout-btn" onclick="checkout()">Thanh toán</button>
+    </main>
+    <script src="js/cart.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Đăng Nhập - Trà Sữa Cat-Tea</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    <header>
+        <h1>Đăng Nhập</h1>
+        <nav>
+            <a href="index.html">Trang chủ  ||  </a>
+            <a href="register.html">Chưa có tài khoản? Đăng ký</a>
+        </nav>
+    </header>
+
+    <!-- Phần thông báo -->
+    <div id="notification" class="notification">
+        <span id="notification-message"></span>
+    </div>
+
+    <main>
+        <form id="login-form">
+            <label>Email:</label>
+            <input type="email" id="email" required>
+
+            <label>Mật khẩu:</label>
+            <input type="password" id="password" required>
+
+            <button type="submit">Đăng nhập</button>
+        </form>
+    </main>
+
+    <script src="js/login.js"></script>
+</body>
+</html>

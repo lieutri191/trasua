@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ff8c00;  /* Đổi thành cam đồng nhất */
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    margin-left: 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+form {
+    width: 100%;
+    max-width: 400px;
+    background: #f2f2f2;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #ccc;
+}
+
+form label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+form input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+form button {
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+    background-color: #27ae60;  /* Đảm bảo màu nút giống trang login */
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+form button:hover {
+    background-color: #1e8449;
+}
+
+/* Kiểu dáng thông báo bên trái */
+.notification {
+    position: fixed;
+    right: 20px;        /* Đặt thông báo ở bên phải */
+    top: 80px;          /* Đặt thông báo cách đầu trang (header) 80px */
+    background-color: #4CAF50;  /* Màu nền mặc định (thành công) */
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: none;
+    z-index: 1000;
+    font-family: Arial, sans-serif;
+    transition: all 0.5s ease;
+}
+
+.notification.error {
+    background-color: #f44336;  /* Màu nền cho thông báo lỗi */
+}
+
+.notification.success {
+    background-color: #4CAF50;  /* Màu nền cho thông báo thành công */
+}
+
+.notification.show {
+    display: block;
+}
+
+.notification button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+}
+

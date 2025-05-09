@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Thanh Toán - Trà Sữa Cat-Tea</title>
+    <link rel="stylesheet" href="css/checkout.css">
+</head>
+<body>
+    <header>
+        <h1>Thanh Toán</h1>
+        <nav>
+            <a href="index.html">Trang chủ  ||  </a>
+            <a href="cart.html">Giỏ hàng</a>
+        </nav>
+    </header>
+    <main>
+        <section id="checkout-section">
+            <h2>Thông tin giao hàng</h2>
+            <form id="checkout-form">
+                <label for="name">Họ và tên</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="address">Địa chỉ giao hàng</label>
+                <input type="text" id="address" name="address" required>
+
+                <label for="phone">Số điện thoại</label>
+                <input type="text" id="phone" name="phone" required>
+
+                <div id="cart-summary">
+                    <h3>Giỏ hàng</h3>
+                    <div id="cart-items-summary"></div>
+                    <p><strong>Tổng tiền: <span id="total-price-summary">0 VND</span></strong></p>
+                </div>
+
+                <button type="submit">Thanh toán</button>
+            </form>
+        </section>
+    </main>
+    <script src="js/checkout.js"></script>
+</body>
+</html>

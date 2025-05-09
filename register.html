@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Đăng Ký Tài Khoản - Trà Sữa Cat-Tea</title>
+    <link rel="stylesheet" href="css/register.css">
+</head>
+<body>
+    <header>
+        <h1>Đăng Ký Tài Khoản</h1>
+        <nav>
+            <a href="index.html">Trang chủ  ||  </a>
+            <a href="login.html">Đã có tài khoản? Đăng nhập</a>
+        </nav>
+    </header>
+    <main>
+        <form id="register-form">
+            <label>Họ tên:</label>
+            <input type="text" id="fullname" required>
+
+            <label>Email:</label>
+            <input type="email" id="email" required>
+
+            <label>Mật khẩu:</label>
+            <input type="password" id="password" required>
+
+            <label>Nhập lại mật khẩu:</label>
+            <input type="password" id="confirm-password" required>
+
+            <button type="submit">Đăng ký</button>
+        </form>
+    </main>
+
+    <!-- Phần thông báo -->
+    <div id="notification" class="notification">
+        <span id="notification-message"></span>
+        <button onclick="closeNotification()">X</button>
+    </div>
+
+    <script src="js/register.js"></script>
+</body>
+</html>

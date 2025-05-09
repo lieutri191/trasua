@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ff8c00;  /* Đổi thành cam đồng nhất */
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    margin-left: 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+form {
+    width: 100%;
+    max-width: 400px;
+    background: #f2f2f2;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #ccc;
+}
+
+form label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+form input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+form button {
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+    background-color: #27ae60;  /* Đảm bảo màu nút giống trang register */
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+form button:hover {
+    background-color: #1e8449;
+}
+.notification {
+    position: fixed;
+    right: 20px;
+    top: 80px; /* Điều chỉnh để hiển thị dưới header */
+    background-color: #27ae60; /* Màu thông báo thành công */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: none;
+    z-index: 1000;
+    font-size: 16px;
+}
+
+.notification.error {
+    background-color: #e74c3c; /* Màu thông báo lỗi */
+}
+
+.notification.show {
+    display: block;
+}
+
+.notification button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+}

@@ -1,0 +1,110 @@
+/* CSS: main.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #ff8000;
+    color: white;
+    padding: 15px 50px;
+    display: flex;
+    justify-content: flex-start; /* Căn đầu phần tử từ bên trái */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    font-size: 30px;
+}
+
+header h1 {
+    margin: 0;
+    display: flex;
+    align-items: center; /* Căn giữa chữ và logo theo chiều dọc */
+    font-size: 30px; /* Thay đổi kích thước chữ nếu cần */
+}
+
+#logo {
+    height: 50px; /* Điều chỉnh kích thước logo nếu cần */
+    margin-left: 10px; /* Khoảng cách giữa chữ và logo */
+}
+
+nav {
+    margin-left: auto; /* Đẩy nav sang bên phải */
+}
+
+nav a {
+    margin-left: 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffd700;
+}
+
+#promo-section {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#promo-section img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.product {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.product img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.product-title {
+    font-weight: bold;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.product-price {
+    font-size: 16px;
+    color: #555;
+}
+
+button {
+    background-color: #27ae60;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #1e8449;
+}
